@@ -1,74 +1,84 @@
-/* Write your CSS code here */
+.submission-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-btn {
+  background-color: rgb(204, 108, 19);
+  color: #ffffff;
+  height: 30px;
+  width: 100%;
+  max-width: 130px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 6px 10px 6px 10px;
+}
+
+.submt-another-response {
+  background-color: rgb(204, 108, 19);
+  color: #ffffff;
+  height: 30px;
+  width: 100%;
+  max-width: 180px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 6px 10px 6px 10px;
+}
+
+.success {
+  color: rgb(34, 255, 5);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.error-msg {
+  color: #d10303;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  align-self: start;
+}
+
+.heading {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(162, 187, 179);
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 36px;
+  }
+}
+
 .registration-form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  background-image: url('https://www.athletadesk.com/wp-content/uploads/2016/08/join-background.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 80px;
 }
 
 @media screen and (max-width: 767px) {
   .registration-form-container {
     flex-direction: column;
-    justify-content: start;
-    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 90px;
   }
-}
-
-.heading {
-  font-size: 48px;
-  color: #ea580c;
-  font-weight: 500;
-}
-
-@media screen and (max-width: 767px) {
-  .form-title {
-    font-size: 36px;
-  }
-}
-
-.display-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 350px;
-  padding: 20px;
-  border-radius: 16px;
-  min-height: 310px;
-}
-
-@media screen and (min-width: 768px) {
-  .display-container {
-    max-width: 450px;
-    flex-shrink: 0;
-    box-shadow: 0px 4px 16px rgba(126, 133, 142, 0.16);
-    padding: 48px 64px 48px 64px;
-  }
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.input-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  width: 100%;
-}
-
-.input-label {
-  margin-bottom: 0px;
-  font-family: 'Roboto';
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
-  color: #475569;
 }
 
 .name-input-field {
@@ -83,42 +93,53 @@
   outline: none;
 }
 
-.success-logo {
-  width: 72px;
-}
-
-.submit-btn {
-  font-family: 'Roboto';
-  font-size: 12px;
-  color: #ffffff;
-  padding: 8px 16px;
-  margin-top: 20px;
-  margin-bottom: 2px;
-  background-color: #ea580c;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-
-@media screen and (max-width: 768px) {
-  .submit-btn {
-    width: 100%;
-  }
-}
-
 .error-field {
   border: 1px solid #ff0b37;
   background-color: #fef2f4;
 }
 
-.error-message {
-  align-self: start;
-  font-size: 12px;
-  margin-top: 3px;
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 16px;
+  min-height: 310px;
+}
+
+@media screen and (min-width: 768px) {
+  .result-container {
+    max-width: 450px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 16px rgba(126, 133, 142, 0.16);
+    padding: 48px 64px 48px 64px;
+  }
+}
+
+.label-heding {
   margin-bottom: 0px;
   font-family: 'Roboto';
-  font-size: 12px;
-  line-height: 16px;
-  color: #ff0b37;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #d8910c;
 }
